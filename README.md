@@ -75,6 +75,16 @@ keychains.list({}, function callback(err, keychains) {
   console.dir(keychains);
 });
 
+var blockId = '';
+bitgo.blockchain().getBlock({id: blockId}, function(err, response) {
+  if (err) { console.log(err); process.exit(-1); }
+  console.log(JSON.stringify(response, null, 4));
+});
+
+
+
+
+
 
 ```
 
