@@ -278,6 +278,6 @@ bitgo.labels({}, function callback(err, labels) {
 }
 ```
 
-```
+```sh
 
 ```
